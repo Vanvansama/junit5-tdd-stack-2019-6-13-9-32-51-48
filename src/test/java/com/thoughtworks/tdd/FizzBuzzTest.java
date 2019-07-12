@@ -19,6 +19,17 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void should_return_2_when_FizzBuzz_given_2(){
+        //given
+        int number = 2;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String s = fizzBuzz.convert(number);
+        //then
+        assertThat(s,is("2"));
+    }
+
+    @Test
     public void should_return_fizz_when_FizzBuzz_given_3(){
         //given
         int number = 3;
@@ -27,5 +38,16 @@ public class FizzBuzzTest {
         String s = fizzBuzz.convert(number);
         //then
         assertThat(s,is("fizz"));
+    }
+
+    @Test
+    public void should_return_buzz_when_FizzBuzz_given_5(){
+        //given
+        int number = 5;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String s = fizzBuzz.convert(number);
+        //then
+        assertThat(s,is("buzz"));
     }
 }
