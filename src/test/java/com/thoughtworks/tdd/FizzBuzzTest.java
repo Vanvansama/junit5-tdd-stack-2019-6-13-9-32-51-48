@@ -50,4 +50,37 @@ public class FizzBuzzTest {
         //then
         assertThat(s,is("buzz"));
     }
+
+    @Test
+    public void should_return_fizz_when_FizzBuzz_given_6(){
+        //given
+        int number = 6;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String s = fizzBuzz.convert(number);
+        //then
+        assertThat(s,is("fizz"));
+    }
+
+    @Test
+    public void should_return_buzz_when_FizzBuzz_given_10(){
+        //given
+        int number = 10;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String s = fizzBuzz.convert(number);
+        //then
+        assertThat(s,is("buzz"));
+    }
+
+    @Test
+    public void should_return_fizzbuzz_when_FizzBuzz_given_15(){
+        //given
+        int number = 15;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String s = fizzBuzz.convert(number);
+        //then
+        assertThat(s,is("fizzbuzz"));
+    }
 }
