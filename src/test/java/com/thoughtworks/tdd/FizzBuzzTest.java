@@ -17,4 +17,15 @@ public class FizzBuzzTest {
         //then
         assertThat(s,is("1"));
     }
+
+    @Test
+    public void should_return_fizz_when_FizzBuzz_given_3(){
+        //given
+        int number = 3;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String s = fizzBuzz.convert(number);
+        //then
+        assertThat(s,is("fizz"));
+    }
 }

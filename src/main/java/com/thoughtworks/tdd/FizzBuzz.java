@@ -3,9 +3,9 @@ package com.thoughtworks.tdd;
 public class FizzBuzz {
 
     public String convert(int num){
-        if( num == 1){
-            return String.valueOf(num);
+        if( num == 3){
+            return "fizz";
         }
-        return null;
+        return String.valueOf(num);
     }
 }
